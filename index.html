@@ -390,6 +390,38 @@
                         </div>
                       </div>
 
+                      {/* Chat 3 - New Content */}
+                      <div className="space-y-6">
+                        {/* User Question */}
+                        <div className="flex gap-4 animate-fade-in-up">
+                            <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center ${isDarkMode ? 'bg-zinc-800' : 'bg-white border border-zinc-200'} shadow-sm`}>
+                                <Users size={20} className={theme.textSub} />
+                            </div>
+                             <div className="max-w-[80%]">
+                                <div className={`p-5 rounded-2xl rounded-tl-none shadow-sm ${theme.bubbleUser}`}>
+                                    <p className="font-semibold text-lg mb-1">수업을 빠지거나 보충이 필요하면 어떡하죠?</p>
+                                    <p className={`text-sm opacity-80`}>일정이 바빠서 걱정돼요.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                         {/* Bot Answer */}
+                        <div className="flex gap-4 justify-end animate-fade-in-up delay-100">
+                            <div className="max-w-[80%]">
+                                <div className={`p-5 rounded-2xl rounded-tr-none shadow-md ${theme.bubbleBot}`}>
+                                    <p className="font-semibold text-lg mb-2">태재는 모든 수강생을 끝까지 책임집니다.</p>
+                                    <ul className="text-sm opacity-90 list-disc list-inside space-y-1 leading-relaxed">
+                                        <li>결석 시 온라인 녹화본 제공 (수강생 전원 종강 후 1달간 열람 가능)</li>
+                                        <li>희망자 대상 2~5회차 수업 전 1시간 보강 제공 (17:30~18:30)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center bg-[#4D46DC] text-white shadow-sm`}>
+                                <Bot size={20} />
+                            </div>
+                        </div>
+                      </div>
+
                     </div>
                 </div>
               </section>
