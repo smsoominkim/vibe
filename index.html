@@ -78,7 +78,7 @@
         import { 
           Code, Zap, CheckCircle, Calendar, Clock, 
           Users, MapPin, ChevronDown, ChevronRight, ArrowRight, 
-          CreditCard, Sun, Moon, Minus, MessageSquare, Bot
+          CreditCard, Sun, Moon, Minus, MessageSquare, Bot, Flag
         } from 'lucide-react';
 
         const VibeCodingLanding = () => {
@@ -141,7 +141,8 @@
               tags: ["Full-cycle", "Replit", "Web"],
               content: [
                 { type: "Spark", title: "Zero to One: AI 시대, 1인 유니콘 기업의 탄생", speaker: "맹성현 부총장" },
-                { type: "Practice", title: "Replit으로 웹 서비스 기획-개발-배포 (3시간 완성)", desc: "전체 개발 스택 이해, 프롬프팅으로 웹 앱 구조 설계, DB 연동, API 연결 및 배포" }
+                { type: "Practice", title: "Replit으로 웹 서비스 기획-개발-배포 (3시간 완성)", desc: "전체 개발 스택 이해, 프롬프팅으로 웹 앱 구조 설계, DB 연동, API 연결 및 배포" },
+                { type: "Task", title: "내 서비스 PRD 작성하고 핵심 기능을 웹으로 구현하기" }
               ]
             },
             {
@@ -151,7 +152,8 @@
               tags: ["React Native", "Mobile", "App"],
               content: [
                 { type: "Spark", title: "AI First: 사용자 접점을 장악하는 플랫폼 전략", speaker: "더존 지용구 대표" },
-                { type: "Practice", title: "Replit으로 웹 앱을 '모바일 앱'으로 확장하기", desc: "React Native 활용, 웹 코드를 앱 코드로 변환, 시뮬레이터 테스트" }
+                { type: "Practice", title: "Replit으로 웹 앱을 '모바일 앱'으로 확장하기", desc: "React Native 활용, 웹 코드를 앱 코드로 변환, 시뮬레이터 테스트" },
+                { type: "Task", title: "나의 웹 서비스를 모바일 앱으로 만들기" }
               ]
             },
             {
@@ -160,8 +162,9 @@
               title: "Market Ready: 실전 같은 디버깅과 마케팅",
               tags: ["Debugging", "SEO", "Growth"],
               content: [
-                { type: "Spark", title: "Engineering Management: 코딩하지 말고 '리뷰'하라", speaker: "장동진 박사 (AWS)" },
-                { type: "Practice", title: "AI 디버깅, 매니징 스킬 및 검색 최적화(SEO)", desc: "오류 유형별 수정 전략, 구글 노출 최적화, 메타 태그 설정" }
+                { type: "Spark", title: "Engineering Leadership: AI를 이끄는 정교한 디렉팅", speaker: "곽지영 학부장" },
+                { type: "Practice", title: "AI 디버깅, 매니징 스킬 및 검색 최적화(SEO)", desc: "오류 유형별 수정 전략, 구글 노출 최적화, 메타 태그 설정" },
+                { type: "Task", title: "나의 서비스 오류 수정하고 구글 검색에 걸리게 설정하기" }
               ]
             },
             {
@@ -170,8 +173,9 @@
               title: "Agentic AI Workflow: 스스로 일하는 AI 만들기",
               tags: ["Agent", "Automation", "Workflow"],
               content: [
-                { type: "Spark", title: "From Chat to Agent: 에이전트 AI의 시대", speaker: "곽지영 학부장" },
-                { type: "Practice", title: "Agentic AI 프레임워크로 뉴스레터 자동화 서비스", desc: "사용자 관심사 기반 뉴스레터 자동 생성/발송, 24시간 관제 시스템 구축" }
+                { type: "Spark", title: "Agentic AI Strategy: 계획하고 성찰하는 AI 워크플로우", speaker: "장동진 박사 (AWS)" },
+                { type: "Practice", title: "Agentic AI 프레임워크로 뉴스레터 자동화 서비스", desc: "사용자 관심사 기반 뉴스레터 자동 생성/발송, 24시간 관제 시스템 구축" },
+                { type: "Task", title: "최종 서비스 완성 및 배포하기" }
               ]
             },
             {
@@ -180,7 +184,7 @@
               title: "High-End UX & Controllability: 프로덕트 완성",
               tags: ["UX/UI", "Admin", "Demo Day"],
               content: [
-                { type: "Spark", title: "Winning Service Experience: 성공하는 AI 서비스의 조건", speaker: "외부 강사" },
+                { type: "Spark", title: "Startup Survival Experience: 초기 서비스의 생존 전략", speaker: "오종환 대표 (랩투아이, 비글즈)" },
                 { type: "Practice", title: "관리자 대시보드로 제어권 확보 및 UX 고도화", desc: "디자인 시스템 통일, 데이터 관리자 페이지 구축" },
                 { type: "Event", title: "최종 데모데이 시연 (공유회)", desc: "수강생 최종 프로젝트 발표 및 피드백" }
               ]
@@ -221,16 +225,25 @@
               imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ji"
             },
             {
-              name: "Global AI Specialist",
-              role: "TBD",
-              desc: ["글로벌 빅테크 AI 스페셜리스트"],
-              imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Global"
+              name: "장동진 박사",
+              role: "AWS AIML Specialist",
+              desc: [
+                "현) AWS AIML 스페셜리스트",
+                "전) 삼성카드 데이터 사이언티스트"
+              ],
+              imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jang"
             },
             {
-              name: "Startup CEO",
-              role: "TBD",
-              desc: ["성공적인 엑시트 경험을 보유한 스타트업 대표"],
-              imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Startup"
+              name: "오종환 대표",
+              role: "Startup CEO",
+              desc: [
+                "현) 비글즈 CTO",
+                "전) 랩투아이 대표",
+                "전) 서울대학교 정보문화학 강사",
+                "2025년 구글플레이 창구 프로그램",
+                "2023년 딥테크팁스 선정"
+              ],
+              imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Oh"
             }
           ];
 
@@ -467,11 +480,20 @@
                                     <div className="md:pl-36 space-y-4 pt-2">
                                         {item.content.map((c, i) => (
                                             <div key={i} className="relative pl-6 border-l border-zinc-200 dark:border-zinc-800">
-                                                {/* 변경된 부분: 모든 타입에 배경색(bg) 적용 및 theme.bg 제거 */}
-                                                <div className={`absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full border-2 ${c.type === 'Spark' ? 'border-yellow-500 bg-yellow-500' : 'border-[#4D46DC] bg-[#4D46DC]'}`}></div>
+                                                {/* 타입별 색상 처리 */}
+                                                <div className={`absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full border-2 
+                                                    ${c.type === 'Spark' ? 'border-yellow-500 bg-yellow-500' : 
+                                                      c.type === 'Task' ? 'border-emerald-500 bg-emerald-500' :
+                                                      c.type === 'Event' ? 'border-rose-500 bg-rose-500' :
+                                                      'border-[#4D46DC] bg-[#4D46DC]'}`}>
+                                                </div>
                                                 <div className="flex items-baseline gap-2 mb-0.5">
-                                                    <span className={`text-[10px] font-bold uppercase tracking-wide ${c.type === 'Spark' ? 'text-yellow-600 dark:text-yellow-500' : theme.accent}`}>
-                                                        {c.type === 'Spark' ? 'Spark Lecture' : c.type === 'Event' ? 'Event' : 'Practice'}
+                                                    <span className={`text-[10px] font-bold uppercase tracking-wide 
+                                                        ${c.type === 'Spark' ? 'text-yellow-600 dark:text-yellow-500' : 
+                                                          c.type === 'Task' ? 'text-emerald-600 dark:text-emerald-500' :
+                                                          c.type === 'Event' ? 'text-rose-600 dark:text-rose-500' :
+                                                          theme.accent}`}>
+                                                        {c.type === 'Spark' ? 'Spark Lecture' : c.type === 'Event' ? 'Event' : c.type === 'Task' ? 'Mission' : 'Practice'}
                                                     </span>
                                                     {c.speaker && <span className={`text-[10px] ${theme.textSub}`}>by {c.speaker}</span>}
                                                 </div>
