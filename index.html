@@ -110,7 +110,8 @@
           };
 
           const handleApplyClick = () => {
-            window.open('https://forms.google.com/placeholder', '_blank'); 
+            // 요청하신 실제 구글 폼 링크로 업데이트
+            window.open('https://forms.gle/yiNRtQ5wBWKNLHBE7', '_blank'); 
           };
 
           const toggleTheme = () => {
@@ -140,7 +141,7 @@
               title: "AI-Native Creation: 웹 서비스 기획부터 배포까지",
               tags: ["Full-cycle", "Replit", "Web"],
               content: [
-                { type: "Spark", title: "Zero to One: AI 시대, 1인 유니콘 기업의 탄생", speaker: "맹성현 부총장" },
+                { type: "Spark", title: "스킬과 영혼: AI시대 경쟁력", speaker: "맹성현 부총장" },
                 { type: "Practice", title: "Replit으로 웹 서비스 기획-개발-배포 (3시간 완성)", desc: "전체 개발 스택 이해, 프롬프팅으로 웹 앱 구조 설계, DB 연동, API 연결 및 배포" },
                 { type: "Task", title: "내 서비스 PRD 작성하고 핵심 기능을 웹으로 구현하기" }
               ]
@@ -159,7 +160,7 @@
             {
               week: "3주차",
               date: "1/29(목)",
-              title: "Market Ready: 실전 같은 디버깅과 마케팅",
+              title: "The AI Vibe Coding Paradox: Why Experience Matters More Than Ever",
               tags: ["Debugging", "SEO", "Growth"],
               content: [
                 { type: "Spark", title: "Engineering Leadership: AI를 이끄는 정교한 디렉팅", speaker: "곽지영 학부장" },
@@ -439,8 +440,67 @@
                 </div>
               </section>
 
+              {/* Info Section */}
+              <section className={`py-16 ${theme.bg}`}>
+                <div className="container mx-auto px-6">
+                    <div className="max-w-5xl mx-auto">
+                        <div className="mb-12">
+                            <span className={`text-xs font-bold tracking-wider uppercase ${theme.accent}`}>Information</span>
+                            <h2 className="text-2xl font-bold mt-2">수강 대상 및 강의 안내</h2>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+                            <div>
+                                <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
+                                    <Users size={20} className={theme.textSub} /> 수강 대상
+                                </h3>
+                                <ul className="space-y-4">
+                                    <li className="flex gap-3 items-start">
+                                        <CheckCircle size={18} className={`mt-0.5 shrink-0 text-[#4D46DC]`} />
+                                        <span className={`${theme.textSub} text-sm`}>나만의 웹/앱 서비스를 직접 만들고 싶은 예비 창업가</span>
+                                    </li>
+                                    <li className="flex gap-3 items-start">
+                                        <CheckCircle size={18} className={`mt-0.5 shrink-0 text-[#4D46DC]`} />
+                                        <span className={`${theme.textSub} text-sm`}>개발자와의 협업이 어렵거나 답답한 기획자/PM/PO</span>
+                                    </li>
+                                    <li className="flex gap-3 items-start">
+                                        <CheckCircle size={18} className={`mt-0.5 shrink-0 text-[#4D46DC]`} />
+                                        <span className={`${theme.textSub} text-sm`}>챗GPT 등 AI를 써본 적 있고 기본 컴퓨터 활용이 가능한 분</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
+                                    <Calendar size={20} className={theme.textSub} /> 강의 안내
+                                </h3>
+                                <ul className="space-y-6">
+                                    <li className="flex gap-4">
+                                        <div className={`w-10 h-10 rounded border flex items-center justify-center shrink-0 ${theme.border} ${theme.textSub}`}>
+                                            <Clock size={18} />
+                                        </div>
+                                        <div>
+                                            <p className="font-semibold text-sm mb-0.5">일정</p>
+                                            <p className={`text-sm ${theme.textSub}`}>1/15 ~ 2/12 (매주 목요일)<br/>18:30 ~ 21:30 (5주)<br/>17:30~18:30 (희망자 대상 보강, 2~5주)</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex gap-4">
+                                        <div className={`w-10 h-10 rounded border flex items-center justify-center shrink-0 ${theme.border} ${theme.textSub}`}>
+                                            <MapPin size={18} />
+                                        </div>
+                                        <div>
+                                            <p className="font-semibold text-sm mb-0.5">장소</p>
+                                            <p className={`text-sm ${theme.textSub}`}>더존을지타워 11층 ATEC 다빈치홀<br/>(더존비즈온 제공)</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+
               {/* Curriculum Section */}
-              <section id="curriculum" className={`py-16 ${theme.bg}`}>
+              <section id="curriculum" className={`py-16 ${theme.bgAlt} border-y ${theme.border}`}>
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto mb-12">
                         <span className={`text-xs font-bold tracking-wider uppercase ${theme.accent}`}>Curriculum</span>
@@ -510,7 +570,7 @@
               </section>
 
               {/* Instructor Section */}
-              <section className={`py-16 ${theme.bgAlt} border-y ${theme.border}`}>
+              <section className={`py-16 ${theme.bg}`}>
                 <div className="container mx-auto px-6">
                     <div className="max-w-5xl mx-auto">
                         <div className="mb-12">
@@ -568,59 +628,6 @@
                                     </div>
                                 ))}
                             </div>
-                        </div>
-                    </div>
-                </div>
-              </section>
-
-              {/* Info Section */}
-              <section className={`py-16 ${theme.bg}`}>
-                <div className="container mx-auto px-6">
-                    <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
-                        <div>
-                            <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
-                                <Users size={20} className={theme.textSub} /> 수강 대상
-                            </h3>
-                            <ul className="space-y-4">
-                                <li className="flex gap-3 items-start">
-                                    <CheckCircle size={18} className={`mt-0.5 shrink-0 text-[#4D46DC]`} />
-                                    <span className={`${theme.textSub} text-sm`}>나만의 웹/앱 서비스를 직접 만들고 싶은 예비 창업가</span>
-                                </li>
-                                <li className="flex gap-3 items-start">
-                                    <CheckCircle size={18} className={`mt-0.5 shrink-0 text-[#4D46DC]`} />
-                                    <span className={`${theme.textSub} text-sm`}>개발자와의 협업이 어렵거나 답답한 기획자/PM/PO</span>
-                                </li>
-                                <li className="flex gap-3 items-start">
-                                    <CheckCircle size={18} className={`mt-0.5 shrink-0 text-[#4D46DC]`} />
-                                    <span className={`${theme.textSub} text-sm`}>챗GPT 등 AI를 써본 적 있고 기본 컴퓨터 활용이 가능한 분</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
-                                <Calendar size={20} className={theme.textSub} /> 강의 안내
-                            </h3>
-                            <ul className="space-y-6">
-                                <li className="flex gap-4">
-                                    <div className={`w-10 h-10 rounded border flex items-center justify-center shrink-0 ${theme.border} ${theme.textSub}`}>
-                                        <Clock size={18} />
-                                    </div>
-                                    <div>
-                                        <p className="font-semibold text-sm mb-0.5">일정</p>
-                                        <p className={`text-sm ${theme.textSub}`}>1/15 ~ 2/12 (매주 목요일)<br/>18:30 ~ 21:30 (5주)</p>
-                                    </div>
-                                </li>
-                                <li className="flex gap-4">
-                                    <div className={`w-10 h-10 rounded border flex items-center justify-center shrink-0 ${theme.border} ${theme.textSub}`}>
-                                        <MapPin size={18} />
-                                    </div>
-                                    <div>
-                                        <p className="font-semibold text-sm mb-0.5">장소</p>
-                                        <p className={`text-sm ${theme.textSub}`}>더존을지타워 11층 ATEC 다빈치홀<br/>(더존비즈온 제공)</p>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
