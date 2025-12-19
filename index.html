@@ -162,7 +162,7 @@
               title: "Market Ready: 실전 같은 디버깅과 마케팅",
               tags: ["Debugging", "SEO", "Growth"],
               content: [
-                { type: "Spark", title: "바이브 코딩: '장난감'을 넘어 '프로덕트'로", speaker: "태재대학교 데이터과학과 인공지능 학부 곽지영 학부장" },
+                { type: "Spark", title: "바이브 코딩: '장난감'을 넘어 '프로덕트'로", speaker: "태재대학교 데이터사이언스 및 인공지능 곽지영 학부장" },
                 { type: "Practice", title: "AI를 활용한 디버깅, 개발 매니징 스킬 및 검색 최적화(SEO)", desc: "오류 유형별 수정 전략, 구글 노출 최적화, 메타 태그 설정" },
                 { type: "Task", title: "나의 서비스 오류를 수정하고 구글 검색에 걸리게 설정하기" }
               ]
@@ -276,12 +276,15 @@
               {/* Navigation */}
               <nav className={`fixed w-full z-50 transition-all duration-300 border-b ${isScrolled ? theme.navBg : 'bg-transparent border-transparent'} ${isScrolled ? 'backdrop-blur-sm' : ''} ${isScrolled ? theme.border : ''}`}>
                 <div className="container mx-auto px-6 h-16 flex justify-between items-center">
-                  {/* Left: Logo (Replaced text with tj.png) */}
-                  <div className="flex items-center">
-                    <img src="./images/tj.png" alt="Taejae Logo" className="h-8 w-auto object-contain" />
+                  {/* Left: Logo & Title (tj.png + Taejae AI Academy) */}
+                  <div className="flex items-center gap-3">
+                    <img src="./images/tjs.png" alt="Taejae Logo" className="h-8 w-auto object-contain" />
+                    <span className={`font-bold text-lg tracking-tight ${theme.text} hidden sm:block`}>
+                      Taejae AI Academy
+                    </span>
                   </div>
                   
-                  {/* Right: Theme Toggle & Partner Image (Replaced button with dz.png) */}
+                  {/* Right: Theme Toggle & Partner Image (Larger Logo, No link) */}
                   <div className="flex items-center gap-4">
                     <button 
                         onClick={toggleTheme}
@@ -294,8 +297,7 @@
                     <img 
                       src="./images/dz.png" 
                       alt="Partner Logo" 
-                      className="h-8 w-auto object-contain cursor-pointer" 
-                      onClick={handleApplyClick} 
+                      className="h-10 md:h-12 w-auto object-contain" 
                     />
                   </div>
                 </div>
